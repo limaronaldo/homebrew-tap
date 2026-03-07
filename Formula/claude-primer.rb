@@ -3,8 +3,8 @@ class ClaudePrimer < Formula
 
   desc "Prime your repo for Claude Code — context-aware knowledge architecture generator"
   homepage "https://github.com/limaronaldo/claude-primer"
-  url "https://files.pythonhosted.org/packages/source/c/claude-primer/claude_primer-1.3.2.tar.gz"
-  sha256 "81c1ff5c5484a59692b9e865141b3f9ce92cb84e0022945c91f6351f8f099d03"
+  url "https://files.pythonhosted.org/packages/source/c/claude-primer/claude_primer-1.3.3.tar.gz"
+  sha256 "7d0a901df4af2d843b1082b13fbb6ccee8382d70b0c9fadd3537d8db6378cd3b"
   license "MIT"
 
   depends_on "python@3.12"
