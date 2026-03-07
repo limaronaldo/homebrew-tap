@@ -3,9 +3,8 @@ class ClaudePrimer < Formula
 
   desc "Prime your repo for Claude Code — context-aware knowledge architecture generator"
   homepage "https://github.com/limaronaldo/claude-primer"
-  url "https://files.pythonhosted.org/packages/source/c/claude-primer/claude_primer-1.3.0.tar.gz"
-  # TODO: Update SHA256 after publishing claude-primer 1.3.0 to PyPI
-  sha256 "PLACEHOLDER_UPDATE_AFTER_PYPI_PUBLISH"
+  url "https://files.pythonhosted.org/packages/source/c/claude-primer/claude_primer-1.3.1.tar.gz"
+  sha256 "8a5a58f0d348432addda97123c0eea8db506e86c959c206ee4685cfa2ce2b83c"
   license "MIT"
 
   depends_on "python@3.12"
