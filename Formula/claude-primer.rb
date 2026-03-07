@@ -1,19 +1,18 @@
 class ClaudePrimer < Formula
-  include Language::Python::Virtualenv
-
-  desc "Prime your repo for Claude Code — context-aware knowledge architecture generator"
+  desc "Prime your repo for Claude Code"
   homepage "https://github.com/limaronaldo/claude-primer"
-  url "https://files.pythonhosted.org/packages/source/c/claude-primer/claude_primer-1.3.3.tar.gz"
-  sha256 "7d0a901df4af2d843b1082b13fbb6ccee8382d70b0c9fadd3537d8db6378cd3b"
+  url "https://files.pythonhosted.org/packages/source/c/claude-primer/claude_primer-1.3.4.tar.gz"
+  sha256 "9d20e963b8864fe4b69ad555cc67abdab3ce6ff0a1c1eabf2b3db14717241d4d"
   license "MIT"
-
   depends_on "python@3.12"
-
   def install
-    virtualenv_install_with_resources
+    libexec.install "claude_primer.py"
+    (bin/"claude-primer").write <<~SH
+      #!/bin/bash
+      exec python3 "#{libexec}/claude_primer.py" "$@"
+    SH
   end
-
   test do
-    assert_match "claude-primer", shell_output("#{bin}/claude-primer --help 2>&1")
+    system bin/"claude-primer", "--help"
   end
 end
