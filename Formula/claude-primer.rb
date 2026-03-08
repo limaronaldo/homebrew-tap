@@ -1,9 +1,9 @@
 class ClaudePrimer < Formula
   desc "Prime your repo for Claude Code"
   homepage "https://github.com/limaronaldo/claude-primer"
-  url "https://github.com/limaronaldo/claude-primer/archive/refs/tags/v1.5.0.tar.gz"
-  sha256 "c3feedafc91e81d6fd5f358c132674157d62d7745f4d1cb55c9ae2b554b5d2d9"
-  version "1.5.0"
+  url "https://github.com/limaronaldo/claude-primer/archive/refs/tags/v1.5.1.tar.gz"
+  sha256 "be521fb7706f947d1a589aa70c013d916d2fdbfd2eb9175d77acec308953f12f"
+  version "1.5.1"
   license "MIT"
   depends_on "python@3.12"
   def install
