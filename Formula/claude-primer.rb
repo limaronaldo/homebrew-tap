@@ -1,7 +1,7 @@
 class ClaudePrimer < Formula
   desc "Prime your repo for Claude Code"
-  homepage "https://github.com/limaronaldo/claude-primer"
-  url "https://github.com/limaronaldo/claude-primer/releases/download/v1.8.0/claude-primer-v1.8.0.tar.gz"
+  homepage "https://github.com/limaronaldo/claude-toolkit"
+  url "https://github.com/limaronaldo/claude-toolkit/releases/download/primer-v1.8.0/claude-primer-v1.8.0.tar.gz"
   version "1.8.0"
   license "MIT"
   depends_on "python@3.12"
